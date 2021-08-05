@@ -10,6 +10,7 @@ public class SistemasCoordenadas2D {
     public static void main(String[] args) {
         Cartesiana2D punto = new Cartesiana2D();
         Polar punto2 = new Polar();
+        Cartesiana2D punto3 = new Cartesiana2D(punto2);
         // Agregar las instrucciones necesarias para que se presente
         // en pantalla la solicitud de los datos y posteriormente
         // el usuario los ingrese desde el teclado
@@ -21,6 +22,11 @@ public class SistemasCoordenadas2D {
 class Cartesiana2D {
     private int x, y;
     
+    public Cartesiana2D() {}
+    public Cartesiana2D(Polar p) {
+       this.x = 0;  // CORREGIR!!
+       this.y = 0;  // CORREGIR!!
+    }
     public void setX(int x) {
         this.x = x;
     }
